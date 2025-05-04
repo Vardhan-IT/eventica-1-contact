@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Event Planner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="enhanced-styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../index.html#events">Events</a>
+            <a href="../index.html#packages">Packages</a>
+            <a href="../index.html#contact">Contact</a>
+            <a href="../cart/cart.html" id="nav-cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="nav-cart-count">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <div class="parallax-hero">
+            <div class="hero-content">
+                <h1 data-aos="fade-up">Get in Touch</h1>
+                <p data-aos="fade-up" data-aos-delay="200">We're here to help you plan your perfect event</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="contact-content">
+                <section class="contact-form-section" data-aos="fade-up">
+                    <div class="section-header">
+                        <h2>Send Us a Message</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                            </div>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <i class="fas fa-calendar-alt"></i>
+                                <select id="eventType" name="eventType" required>
+                                    <option value="">Select Event Type</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="corporate">Corporate</option>
+                                    <option value="festival">Festival</option>
+                                    <option value="party">Party</option>
+                                </select>
+                            </div>
+                            <div class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <i class="fas fa-comment"></i>
+                                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="error-message"></div>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                    </form>
+                    <div class="form-success">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>We'll get back to you within 24 hours.</p>
+                    </div>
+                </section>
+
+                <section class="contact-info-section" data-aos="fade-up">
+                    <div class="section-header">
+                        <h2>Contact Information</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Our Location</h3>
+                            <p>123 Event Street, Suite 100</p>
+                            <p>New York, NY 10001</p>
+                            <a href="#" class="info-link">Get Directions <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3>Phone Numbers</h3>
+                            <p>Main: (555) 123-4567</p>
+                            <p>Support: (555) 987-6543</p>
+                            <a href="tel:+15551234567" class="info-link">Call Us <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email Address</h3>
+                            <p>info@eventplanner.com</p>
+                            <p>support@eventplanner.com</p>
+                            <a href="mailto:info@eventplanner.com" class="info-link">Email Us <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 9am - 6pm</p>
+                            <p>Saturday: 10am - 4pm</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="map-section" data-aos="fade-up">
+                    <div class="section-header">
+                        <h2>Find Us</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2155710122!2d-73.987844924164!3d40.748440971389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" 
+                                width="100%" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </section>
+
+                <section class="faq-section" data-aos="fade-up">
+                    <div class="section-header">
+                        <h2>Frequently Asked Questions</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How far in advance should I book my event?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We recommend booking at least 3-6 months in advance for most events. For weddings and large corporate events, we suggest booking 6-12 months ahead to ensure availability of your preferred date and venue.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What is included in your event planning packages?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Our packages include venue selection, vendor coordination, event design, timeline management, and on-site coordination. Additional services can be customized based on your specific needs.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Do you offer virtual event planning services?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we offer comprehensive virtual event planning services, including platform selection, technical support, and engagement strategies to ensure your virtual event is successful.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What is your cancellation policy?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Our cancellation policy varies based on the type of event and services booked. We typically require a 30-day notice for cancellations, with some fees applicable. Please contact us for specific details.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="../script.js"></script>
+    <script src="../navigation.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html> 
